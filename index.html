@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Sidebar Navigation Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="left-navbar">
+        <div class="navbar-title">Concentrix PH Hub</div>
+        <div class="nav-links">
+            <button class="nav-btn" data-url="https://en.m.wikipedia.org/wiki/Main_Page">Workday</button>
+            <button class="nav-btn" data-url="https://en.m.wikipedia.org/wiki/Portal:Space">Concentrix Announcement</button>
+            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">How to ticket?</button>
+            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">Everything Information Technology</button>
+            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">CNXU</button>
+            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">ITTS</button>
+            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">PRTG</button>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <div class="top-bar">
+            <div class="search-box">
+                <input type="text" id="dashboard-search" placeholder="Search...">
+                <button type="button" id="search-submit-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="panel-content">
+            <div id="placeholder" class="placeholder-text">
+                <h1>Welcome to your Dashboard</h1>
+                <p>Click any button on the left sidebar to load a website inside this panel.</p>
+            </div>
+            
+            <iframe id="site-panel" style="display: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
