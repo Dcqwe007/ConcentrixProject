@@ -15,6 +15,7 @@ loginButton.addEventListener('click', () => {
     const user = document.getElementById('username').value.trim();
     const pass = document.getElementById('password').value.trim();
 
+    // Checks if fields are not empty
     if (user !== "" && pass !== "") {
         loginOverlay.style.display = 'none';
         leftNavbar.style.display = 'flex';
@@ -44,7 +45,6 @@ buttons.forEach(button => {
 });
 
 // --- OPTIONAL SEARCH FUNCTIONALITY ---
-// This takes whatever you type and looks it up inside Google right inside your dashboard panel layout
 function executeSearch() {
     const query = searchInput.value.trim().toLowerCase();
     if (query === "") return;
@@ -52,7 +52,7 @@ function executeSearch() {
     let matchFound = false;
     buttons.forEach(button => {
         if (button.textContent.toLowerCase().includes(query) && !matchFound) {
-            button.click(); // Automatically trigger the navigation logic
+            button.click(); // Automatically trigger the sidebar click logic
             matchFound = true;
         }
     });

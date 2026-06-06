@@ -7,21 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Login Page Overlay -->
+    <div id="login-overlay">
+        <div class="login-card">
+            <h2>Concentrix PH Hub</h2>
+            <p>Please log in to access the dashboard</p>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-button">Login</button>
+        </div>
+    </div>
 
-    <nav class="left-navbar">
+    <nav class="left-navbar" style="display: none;">
         <div class="navbar-title">Concentrix PH Hub</div>
         <div class="nav-links">
             <button class="nav-btn" data-url="https://en.m.wikipedia.org/wiki/Main_Page">Workday</button>
             <button class="nav-btn" data-url="https://en.m.wikipedia.org/wiki/Portal:Space">Concentrix Announcement</button>
-            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">How to ticket?</button>
-            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">Everything Information Technology</button>
-            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">CNXU</button>
-            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">ITTS</button>
-            <button class="nav-btn" data-url="https://www.youtube.com/embed/0p-ifaHC0to">PRTG</button>
+            <button class="nav-btn" data-url="https://www.google.com.ph/index.html">How to ticket?</button>
+            <button class="nav-btn" data-url="https://mycnx.concentrix.com/sites/core/b/Pages/a/Philippines/Everything-Information-Technology-ov.aspx?authToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjNPOW9mUGRTRVhkdXdWVjRuNlZtOE9SWDhzayJ9.eyJhdWQiOiJ1cm46QXBwUHJveHk6Y29tIiwiaXNzIjoiaHR0cDovL2FkZnMuY29uY2VudHJpeC5jb20vYWRmcy9zZXJ2aWNlcy90cnVzdCIsImlhdCI6MTc4MDczMDY5OCwiZXhwIjoxNzgwNzM0Mjk4LCJyZWx5aW5ncGFydHl0cnVzdGlkIjoiOWNiMDY3M2MtMzJiYS1lYjExLWE4MjItMDAwZDNhNmRjZjgyIiwidXBuIjoiZG9taW5pYy5jYXJyZW9uQGNvbmNlbnRyaXguY29tIiwiY2xpZW50cmVxaWQiOiI1NjhiYWE5ZS1kYTY1LTQzYTgtNWMwOC0wMDgwMDExNDAwZGEiLCJhdXRobWV0aG9kIjoidXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFjOmNsYXNzZXM6dW5zcGVjaWZpZWQiLCJhdXRoX3RpbWUiOiIyMDI2LTA2LTA2VDA3OjI0OjU3Ljg2M1oiLCJ2ZXIiOiIxLjAifQ.FEq_9crkO8T_wbL70Xb3hUwYss-m9sVlWab3cSwXtCk1iAI3TT8AaBOBtRWxZc8tQOJKauUgPKJA82xSRVkmmYYBjmSKgeNalDcqPuaXvdEcS4PNr0Ag5aJxrKnDg-v2XnSefwnA_j1lfAFa2IbAwljRW0OkCHb0lvNVVUI_a55he5pSRhtyYL9pZEbC3gmkkktp3I2CZhSb5D35WlB8SlLA5JG_Ay04IxIpki3teRRWMJpuSVA-BnNl4UI-END2D72u2YCEmua96wOJF25dlzM43QsqDcmdyQ63pkh3YV6nf72uenXKQhMqgF03k_Lcu07XLk4LOy3ukr0Yd89x_g&client-request-id=568baa9e-da65-43a8-5c08-0080011400da">Everything Information Technology</button>
+            <button class="nav-btn" data-url="https://adfs.concentrix.com/adfs/ls/">CNXU</button>
+            <button class="nav-btn" data-url="https://nodejs.org/en/download">ITTS</button>
+            <button class="nav-btn" data-url="https://www.paessler.com/lp/network-monitoring-tool-prtg?utm_term=prtg&utm_campaign=283723726&utm_content=&utm_source=bing&utm_medium=cpc&utm_adgroup=1244647615500194&utm_device=c&msclkid=e01f9492fb8d180a6b4bfeb13651553b">PRTG</button>
         </div>
     </nav>
 
-    <div class="main-container">
+    <div class="main-container" style="display: none;">
         
         <div class="top-bar">
             <div class="search-box">

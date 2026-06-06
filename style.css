@@ -13,11 +13,71 @@ body {
     overflow: hidden;
 }
 
+/* --- LOGIN OVERLAY --- */
+#login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #18191a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-card h2 {
+    color: #008892;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    color: #65676b;
+    margin-bottom: 25px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccd0d5;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #008892;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.login-card button:hover {
+    background-color: #006f78;
+}
+
 /* --- NAVBAR / SIDEBAR (Left Side) --- */
 .left-navbar {
     width: 280px;
     height: 100%;
-    background-color: #18191a;
+    background-color: #003D5B;
     color: #ffffff;
     padding: 20px;
     display: flex;
@@ -33,7 +93,7 @@ body {
     text-align: center;
     border-bottom: 1px solid #3a3b3c;
     padding-bottom: 15px;
-    color: #008892;
+    color: #ffffff;
 }
 
 .nav-links {
