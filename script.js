@@ -4,6 +4,7 @@ const iframe = document.getElementById('site-panel');
 const placeholder = document.getElementById('placeholder');
 const searchInput = document.getElementById('dashboard-search');
 const searchButton = document.getElementById('search-submit-btn');
+const backBtn = document.getElementById('back-to-dash-btn');
 
 // --- LOGIN LOGIC ---
 const loginButton = document.getElementById('login-button');
@@ -55,6 +56,7 @@ logoutBtn.addEventListener('click', () => {
     iframe.src = '';
     iframe.style.display = 'none';
     placeholder.style.display = 'flex';
+    backBtn.style.display = 'none';
     
     // Clear active buttons
     buttons.forEach(btn => btn.classList.remove('active'));
@@ -73,10 +75,25 @@ buttons.forEach(button => {
         // Hide placeholder and show iframe
         placeholder.style.display = 'none';
         iframe.style.display = 'block';
+        backBtn.style.display = 'flex';
 
         // Load the website inside the dashboard panel
         iframe.src = targetUrl;
     });
+});
+
+// --- BACK BUTTON FUNCTIONALITY ---
+backBtn.addEventListener('click', () => {
+    // Clear the iframe and hide it
+    iframe.src = '';
+    iframe.style.display = 'none';
+    
+    // Show the welcome background and hide the back button
+    placeholder.style.display = 'flex';
+    backBtn.style.display = 'none';
+    
+    // Remove the highlight class from all sidebar buttons
+    buttons.forEach(btn => btn.classList.remove('active'));
 });
 
 // --- OPTIONAL SEARCH FUNCTIONALITY ---
@@ -100,6 +117,7 @@ function executeSearch() {
         placeholder.style.display = 'none';
         iframe.style.display = 'block';
         iframe.src = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(searchInput.value.trim())}`;
+        backBtn.style.display = 'flex';
     }
 }
 
