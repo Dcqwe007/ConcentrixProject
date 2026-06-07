@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concentrix History</title>
+    <style>
+        /* Scoped styles just for the history iframe */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: transparent;
+            padding: 20px;
+            color: #2d3748;
+            margin: 0;
+        }
+        .history-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+        h1 {
+            color: #002B49;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .section-title {
+            color: #009bb6;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+        }
+        /* Timeline Styles */
+        .timeline {
+            margin: 20px 0;
+            border-left: 3px solid #009bb6;
+            padding-left: 25px;
+        }
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -33px;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            background: #009bb6;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            box-shadow: 0 0 0 2px #009bb6;
+        }
+        .year {
+            font-weight: 700;
+            color: #002B49;
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+        }
+        /* Leadership Grid Styles */
+        .leaders-grid {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .leader-profile {
+            text-align: center;
+            max-width: 280px;
+        }
+        .leader-profile img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #009bb6;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 18px;
+        }
+        .leader-profile h3 {
+            color: #1a202c;
+            margin-bottom: 5px;
+            font-size: 1.3rem;
+        }
+        .leader-profile p {
+            color: #718096;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="history-card">
+        <h1>The History of Concentrix</h1>
+        <p class="subtitle">From a single subsidiary to a global leader in customer experience.</p>
+        
+        <h2 class="section-title">Key Milestones</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="year">1983</div>
+                <p>Concentrix is originally founded, beginning its long journey in the customer engagement industry.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2006</div>
+                <p>SYNNEX Corporation acquires Concentrix, setting the stage for massive global expansion and technological integration.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2014</div>
+                <p>Concentrix acquires the IBM Customer Care business (IBM CRM), significantly expanding its global footprint and services.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2018</div>
+                <p>Concentrix acquires Convergys, making it the second-largest global provider of customer engagement services.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2020</div>
+                <p>Concentrix spins off from SYNNEX and becomes an independent, publicly traded company on the NASDAQ (CNXC).</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2023</div>
+                <p>Concentrix completes a highly anticipated merger with Webhelp, further expanding its dominance in the CX space worldwide.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Visionary Leadership</h2>
+        <div class="leaders-grid">
+            <div class="leader-profile">
+                <!-- Corporate placeholder for Robert Huang -->
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300&auto=format&fit=crop" alt="Robert Huang">
+                <h3>Robert Huang</h3>
+                <p>Founder of SYNNEX Corporation, the parent company that originally nurtured and scaled Concentrix into an industry powerhouse.</p>
+            </div>
+            <div class="leader-profile">
+                <!-- Corporate placeholder for Chris Caldwell -->
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=300&auto=format&fit=crop" alt="Chris Caldwell">
+                <h3>Chris Caldwell</h3>
+                <p>President and CEO of Concentrix. He led the company through its biggest acquisitions, public spin-off, and explosive global growth.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

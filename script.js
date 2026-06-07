@@ -26,7 +26,7 @@ loginButton.addEventListener('click', () => {
         // Check for IT Ops role
         if (user.toLowerCase() === 'dominic.carreon@concentrix.com' || user.toLowerCase().includes('it')) {
             document.querySelectorAll('.it-ops-only').forEach(btn => {
-                btn.style.display = 'block';
+                btn.style.display = 'flex';
             });
             document.querySelector('#placeholder h1').innerText = "Welcome to IT Ops Dashboard";
         } else {
@@ -54,7 +54,7 @@ logoutBtn.addEventListener('click', () => {
     // Reset iframe and placeholder
     iframe.src = '';
     iframe.style.display = 'none';
-    placeholder.style.display = 'block';
+    placeholder.style.display = 'flex';
     
     // Clear active buttons
     buttons.forEach(btn => btn.classList.remove('active'));
