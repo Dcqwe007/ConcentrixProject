@@ -70,11 +70,11 @@ buttons.forEach(button => {
         // Get the URL from the data-url attribute
         const targetUrl = this.getAttribute('data-url');
 
-        // Hide the placeholder text and show the iframe panel
+        // Hide placeholder and show iframe
         placeholder.style.display = 'none';
         iframe.style.display = 'block';
 
-        // Change the iframe source to load the target website inside the dashboard
+        // Load the website inside the dashboard panel
         iframe.src = targetUrl;
     });
 });
