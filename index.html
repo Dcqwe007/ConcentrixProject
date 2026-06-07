@@ -10,20 +10,27 @@
 <body>
     <!-- Login Page Overlay -->
     <div id="login-overlay">
-        <div class="login-card">
-            <h2>Concentrix PH Hub</h2>
-            <p>Please log in to access the dashboard</p>
-            <p style="font-size: 0.8rem; color: #aaa; margin-top: -15px; margin-bottom: 15px;">Hint: use "itops" as username for IT Ops access.</p>
-            <input type="text" id="username" placeholder="Username">
-            <input type="password" id="password" placeholder="Password">
-            <button id="login-button">Login</button>
+        <div class="login-content-wrapper">
+            <div class="login-branding">
+                <h1 class="brand-logo">CONCENTRIX</h1>
+                <p class="brand-tagline">Design, build, and run the future of customer experience.</p>
+            </div>
+            <div class="login-form-container">
+                <div class="login-card">
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="password" id="password" placeholder="Password">
+                    <button id="login-button">Log In</button>
+                    <div class="login-divider"></div>
+                    <p style="font-size: 0.85rem; color: #64748b; margin-top: 15px;">Hint: use "itops" for IT Ops access.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <nav class="left-navbar" style="display: none;">
         <div class="navbar-title">Concentrix PH Hub</div>
         <div class="nav-links">
-            <button class="nav-btn" data-url="https://en.m.wikipedia.org/wiki/Main_Page"><i class="fa-solid fa-briefcase"></i> Workday</button>
+            <button class="nav-btn" data-url="https://www.workday.com/"><i class="fa-solid fa-briefcase"></i> Workday</button>
             <button class="nav-btn" data-url="https://mycnx.concentrix.com/SitePages/Home.aspx"><i class="fa-solid fa-bullhorn"></i> Concentrix Announcement</button>
             <button class="nav-btn" data-url="https://www.google.com.ph/index.html"><i class="fa-solid fa-ticket"></i> How to ticket?</button>
             <button class="nav-btn it-ops-only" data-url="https://mycnx.concentrix.com/sites/core/b/Pages/a/Philippines/Everything-Information-Technology-ov.aspx?authToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjNPOW9mUGRTRVhkdXdWVjRuNlZtOE9SWDhzayJ9.eyJhdWQiOiJ1cm46QXBwUHJveHk6Y29tIiwiaXNzIjoiaHR0cDovL2FkZnMuY29uY2VudHJpeC5jb20vYWRmcy9zZXJ2aWNlcy90cnVzdCIsImlhdCI6MTc4MDczMDY5OCwiZXhwIjoxNzgwNzM0Mjk4LCJyZWx5aW5ncGFydHl0cnVzdGlkIjoiOWNiMDY3M2MtMzJiYS1lYjExLWE4MjItMDAwZDNhNmRjZjgyIiwidXBuIjoiZG9taW5pYy5jYXJyZW9uQGNvbmNlbnRyaXguY29tIiwiY2xpZW50cmVxaWQiOiI1NjhiYWE5ZS1kYTY1LTQzYTgtNWMwOC0wMDgwMDExNDAwZGEiLCJhdXRobWV0aG9kIjoidXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFjOmNsYXNzZXM6dW5zcGVjaWZpZWQiLCJhdXRoX3RpbWUiOiIyMDI2LTA2LTA2VDA3OjI0OjU3Ljg2M1oiLCJ2ZXIiOiIxLjAifQ.FEq_9crkO8T_wbL70Xb3hUwYss-m9sVlWab3cSwXtCk1iAI3TT8AaBOBtRWxZc8tQOJKauUgPKJA82xSRVkmmYYBjmSKgeNalDcqPuaXvdEcS4PNr0Ag5aJxrKnDg-v2XnSefwnA_j1lfAFa2IbAwljRW0OkCHb0lvNVVUI_a55he5pSRhtyYL9pZEbC3gmkkktp3I2CZhSb5D35WlB8SlLA5JG_Ay04IxIpki3teRRWMJpuSVA-BnNl4UI-END2D72u2YCEmua96wOJF25dlzM43QsqDcmdyQ63pkh3YV6nf72uenXKQhMqgF03k_Lcu07XLk4LOy3ukr0Yd89x_g&client-request-id=568baa9e-da65-43a8-5c08-0080011400da"><i class="fa-solid fa-desktop"></i> Everything Information Technology</button>
@@ -47,12 +54,14 @@
         </div>
 
         <div class="panel-content">
-            <div id="placeholder" class="placeholder-text">
-                <h1>Welcome to Concentrix PH Hub</h1>
-                <p>Click any button on the left sidebar to load a website inside this panel.</p>
+            <div class="panel-card">
+                <div id="placeholder" class="placeholder-text">
+                    <h1>Welcome to Concentrix PH Hub</h1>
+                    <p>Click any button on the left sidebar to load a website inside this panel.</p>
+                </div>
+                
+                <iframe id="site-panel" style="display: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            
-            <iframe id="site-panel" style="display: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <footer class="dashboard-footer">
